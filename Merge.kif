@@ -167,7 +167,7 @@ is a &%subclass of ?CLASS2, i.e. every &%instance of ?CLASS1 is also an &%instan
 ?CLASS2 and there is no other subclass of ?CLASS2 such that ?CLASS1 is also a subclass of
 it.")
 (documentation immediateSubclass ChineseLanguage "一个&%SetOrClass的 ?CLASS1 是另一个
-&%SetOrClass ?CLASS2 的&%immediateSubclass, 为免 ?CLASS1 成为 ?CLASS2 的子类别，而 ?CLASS2
+&%SetOrClass ?CLASS2 的&%immediateSubclass, 为避免 ?CLASS1 成为 ?CLASS2 的子类别，而 ?CLASS2
 再没有子类别，这样 ?CLASS1 也是 ?CLASS2 的子类别。")
 
 
@@ -238,7 +238,7 @@ If the restriction on the argument type of a &%Relation is not captured by a
 compositionally with the functions &%UnionFn, &%IntersectionFn, etc.")
 (documentation domain ChineseLanguage "为声明某种特定关系参数的类型， 提供一个便利计算机和应用启发
 式运算的机制。公式（＆％domain？REL？INT？CLASS)的意思是在？REL关系中，每个元组的第?INT个元素，必须是
-？CLASS种的一个实例。 指定参数类型对维护知识本体甚有裨益。 表示知识的系统可以使用这些规范来把术语分类， 并
+？CLASS中的一个实例。 指定参数类型对维护知识本体甚有裨益。 表示知识的系统可以使用这些规范来把术语分类， 并
 检查系统的完整性约束有否受到破坏。如果出现某个％Relation参数类型的限制，还没有在知识本体内现有
 ＆％SetOrClass定义所描述时，可以使用＆％UnionFn和＆％IntersectionFn等这些功能，来逐一指定该
 ＆％SetOrClass的限制。
